@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("https://www.transparenttextures.com/patterns/dark-denim-3.png");
+            font-family: 'Neuton', serif;
+        }
+
+        #header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10vmin;
+            background-color: rgba(255, 255, 255, 0.5)
+        }
+
+        #header-img {
+            float: left;
+            height: 100%;
+            width: 10vmin;
+            border-radius: 2vmin;
+        }
+
+        #nav-bar {
+            float: right;
+            display: flex;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 0 2vmin;
+        }
+
+        a {
+            display: block;
+            margin: auto 2vmin;
+            font-size: 3vmin;
+        }
+
+        #title {
+            margin-top: 20vmin;
+            text-decoration: underline;
+            text-align: center;
+            font-size: 10vmin;
+        }
+
+        #container {
+            margin: 5vmin 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        #form {
+            margin-top: 10vmin;
+        }
+
+        #email-label {
+            font-size: 3vmin;
+        }
+
+        #email {
+            font-family: 'Neuton', serif;
+            font-size: 3vmin;
+            margin-left: 4vmin;
+            margin-right: 2vmin;
+            padding: 0.5vmin;
+        }
+
+        #submit {
+            font-family: 'Neuton', serif;
+            font-size: 3vmin;
+            padding: 0.5vmin;
+            width: 16vmin;
+            font-weight: 500;
+            color: #185a18;
+            background-color: white;
+        }
+
+        #submit:hover {
+            color: white;
+            background-color: #185a18;
+        }
+
+        @media(max-width: 700) {
+            #container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <header id="header">
+        <img src="https://c7.uihere.com/files/275/188/982/wireless-connection-wifi-signal-thumb.jpg" id="header-img">
+        <nav id="nav-bar">
+            <a href="#title" class="nav-link">Title</a>
+            <a href="#video" class="nav-link">Video</a>
+            <a href="#form" class="nav-link">Form</a>
+        </nav>
+    </header>
+    <h1 id="title">B U S I N E S S</h1>
+    <div id="container">
+        <iframe id="video" width="700" height="400" src="https://www.youtube.com/embed/J4BJu1DF54U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div id="container">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <label id="email-label" for="email">Email-ID:</label>
+            <input type="email" placeholder="Your E-mail ID here" id="email" name="email">
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+</body>
+
+</html>
